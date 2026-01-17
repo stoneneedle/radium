@@ -2,15 +2,15 @@
 
 This repo contains 3 scripts:
 
-up.py: Takes a directory tree and tars it, encrypting the tar file using chacha20 and argon2 for key stretching.
-down.py: Decrypts the encrypted file and untars it, restoring a directory tree for use.
-keygen.py: Generates a secure key for symmetric encryption/decryption.
+**up.py**: Takes a directory tree and tars it, encrypting the tar file using chacha20 and argon2 for key stretching.
+**down.py**: Decrypts the encrypted file and untars it, restoring a directory tree for use.
+**keygen.py**: Generates a secure key for symmetric encryption/decryption.
 
 # Configuration
 
 In config.py, the main lines to change are as follows:
 
-```
+```py
 # The password used for encryption/decryption
 PASSWORD = "generatedkeygenkeyhere"
 
