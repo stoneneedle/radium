@@ -2,8 +2,8 @@
 
 This repo contains 3 scripts:
 
-**up.py**: Takes a directory tree and tars it, encrypting the tar file using chacha20 and argon2 for key stretching.
-**down.py**: Decrypts the encrypted file and untars it, restoring a directory tree for use.
+**up.py**: Takes a directory tree and tars it, encrypting the tar file using chacha20 and argon2 for key stretching.  
+**down.py**: Decrypts the encrypted file and untars it, restoring a directory tree for use.  
 **keygen.py**: Generates a secure key for symmetric encryption/decryption.
 
 # Configuration
@@ -29,11 +29,11 @@ Change username to your username as needed (Windows-style paths are used with Py
 
 The variables represent the following:  
 
-PASSWORD: The symmetric key used to encrypt the archive.  
-SOURCE_DIR: The source directory that is tarred and encrypted. Used in up.py.  
-OUT_DIR: Where the encrypted output file is placed after it is tarred and encrypted. Used by up.py.  
-ENCRYPTED_FILE: The encrypted file to be decrypted and untarred. Used by down.py.  
-RESTORE_DIR: Where to place the restored (decrypted/untarred) directory tree. Used by down.py.  
+**PASSWORD**: The symmetric key used to encrypt the archive.  
+**SOURCE_DIR**: The source directory that is tarred and encrypted. Used in up.py.  
+**OUT_DIR**: Where the encrypted output file is placed after it is tarred and encrypted. Used by up.py.  
+**ENCRYPTED_FILE**: The encrypted file to be decrypted and untarred. Used by down.py.  
+**RESTORE_DIR:** Where to place the restored (decrypted/untarred) directory tree. Used by down.py.  
 
 # Logging Added
 
